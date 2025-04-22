@@ -22,6 +22,8 @@ controls:
   macos_settings:
     custom_settings:
       - path: ../lib/disable-bluetooth-file-sharing.mobileconfig
+        labels_include_all:
+          - Macs on Sonoma
   scripts:
     - path: ../lib/set-timezone.script.sh
     - path: ../lib/zoom-config.sh
