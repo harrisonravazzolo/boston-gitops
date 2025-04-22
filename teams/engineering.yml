@@ -10,6 +10,7 @@
 name: Engineering
 policies:
   - path: ../lib/macos-device-health.policies.yml
+  - path: ../lib/dns-resolvers.policies.yml
 queries:
   - path: ../lib/collect-usb-devices.queries.yml
   - path: ../lib/collect-failed-login-attempts.queries.yml
@@ -18,6 +19,7 @@ agent_options:
 controls:
   scripts:
     - path: ../lib/set-timezone.script.sh
+    - path: ../lib/update-dns.sh
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"
