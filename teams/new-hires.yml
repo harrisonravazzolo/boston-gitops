@@ -22,7 +22,7 @@ controls:
   macos_settings:
     custom_settings:
       - path: ../lib/disable-bluetooth-file-sharing.mobileconfig
-        labels_include_all:
+        labels_exclude_all:
           - Macs on Sonoma 2
   scripts:
     - path: ../lib/set-timezone.script.sh
