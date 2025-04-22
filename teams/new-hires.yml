@@ -24,7 +24,10 @@ controls:
       - path: ../lib/disable-bluetooth-file-sharing.mobileconfig
   scripts:
     - path: ../lib/set-timezone.script.sh
+    - path: ../lib/zoom-config.sh
 team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
 software:
+  packages:
+    - path: ../lib/zoom.yml
